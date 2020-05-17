@@ -24,6 +24,6 @@ public class MyView extends View {
         super.onDraw(canvas);
 
         //Add your drawing code here
-        canvas.drawRect(10,30,200,200,redPaint);
+        canvas.drawRect(10,30,200,200, redPaint);
     }
 }
