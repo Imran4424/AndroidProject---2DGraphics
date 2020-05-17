@@ -27,6 +27,7 @@ public class MyView extends View {
         bluePaint.setColor(Color.BLUE);
         bluePaint.setStrokeWidth(10);
 
+        greenPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
 
         Path myLines = new Path();
