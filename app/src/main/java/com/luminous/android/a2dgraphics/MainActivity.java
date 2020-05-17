@@ -14,5 +14,7 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main);
 
         // replace the view with custom design view
+        myView = new MyView(this);
+        
     }
 }
