@@ -28,6 +28,8 @@ public class MyView extends View {
         bluePaint.setStrokeWidth(10);
 
         greenPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        greenPaint.setStyle(Paint.Style.STROKE);
+        greenPaint.setStrokeWidth(5);
 
 
         Path myLines = new Path();
