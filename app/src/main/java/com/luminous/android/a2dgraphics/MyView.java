@@ -32,6 +32,11 @@ public class MyView extends View {
 
         //Add your drawing code here
         canvas.drawRect(10,30,200,200, redPaint);
+
         canvas.drawCircle(300, 300, 250, bluePaint);
+        canvas.drawCircle(500, 450, 50, bluePaint);
+
+        canvas.drawRect(500,500,700,700, redPaint);
+        canvas.drawCircle(600, 600, 145, bluePaint);
     }
 }
