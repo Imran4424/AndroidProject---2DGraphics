@@ -2,6 +2,7 @@ package com.luminous.android.a2dgraphics;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 
@@ -20,6 +21,9 @@ public class MyView extends View {
         redPaint.setStrokeWidth(5); //set the line stroke width to 5
 
         bluePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        bluePaint.setStyle(Paint.Style.STROKE);
+        bluePaint.setColor(Color.BLUE);
+        bluePaint.setStrokeWidth(10);
     }
 
     @Override
