@@ -51,8 +51,18 @@ public class MyView extends View {
         canvas.drawRect(10,30,200,200, redPaint);
         canvas.drawCircle(300, 300, 250, bluePaint);
 
-//        canvas.drawPath(myLines, greenPaint);
+        canvas.drawPath(myLines, greenPaint);
 
-        Path quizLines = new Path();
+//        Path quizLines = new Path();
+//        quizLines.moveTo(50, 300);
+//        quizLines.lineTo(160, 280);
+//        quizLines.lineTo(300, 380);
+//        quizLines.lineTo(380, 370);
+//        quizLines.lineTo(280, 450);
+//        quizLines.lineTo(100, 390);
+//        quizLines.lineTo(160, 380);
+//        quizLines.lineTo(50, 300);
+//
+//        canvas.drawPath(quizLines, greenPaint);
     }
 }
