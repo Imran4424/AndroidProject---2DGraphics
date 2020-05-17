@@ -13,5 +13,7 @@ public class MyView extends View {
 
         // Add initialization code here
         redPaint  = new Paint(Paint.ANTI_ALIAS_FLAG);
+        redPaint.setStyle(Paint.Style.STROKE);
+        
     }
 }
