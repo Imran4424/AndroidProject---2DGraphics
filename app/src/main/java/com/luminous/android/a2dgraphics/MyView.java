@@ -14,6 +14,6 @@ public class MyView extends View {
         // Add initialization code here
         redPaint  = new Paint(Paint.ANTI_ALIAS_FLAG);
         redPaint.setStyle(Paint.Style.STROKE);
-        
+        redPaint.setColor(0xffff0000); // color red
     }
 }
