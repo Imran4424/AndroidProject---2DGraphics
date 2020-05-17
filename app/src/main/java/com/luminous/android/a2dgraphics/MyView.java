@@ -13,7 +13,7 @@ public class MyView extends View {
 
         // Add initialization code here
         redPaint  = new Paint(Paint.ANTI_ALIAS_FLAG);
-        redPaint.setStyle(Paint.Style.STROKE);
+        redPaint.setStyle(Paint.Style.STROKE); //stroke only no fill
         redPaint.setColor(0xffff0000); // color red
         redPaint.setStrokeWidth(5); //set the line stroke width to 5
     }
