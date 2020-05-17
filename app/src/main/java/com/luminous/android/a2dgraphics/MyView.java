@@ -40,6 +40,7 @@ public class MyView extends View {
         myLines.lineTo(180, 350);
         myLines.lineTo(220, 420);
         myLines.lineTo(280, 250);
+
     }
 
     @Override
@@ -50,6 +51,8 @@ public class MyView extends View {
         canvas.drawRect(10,30,200,200, redPaint);
         canvas.drawCircle(300, 300, 250, bluePaint);
 
-        canvas.drawPath(myLines, greenPaint);
+//        canvas.drawPath(myLines, greenPaint);
+
+        Path quizLines = new Path();
     }
 }
