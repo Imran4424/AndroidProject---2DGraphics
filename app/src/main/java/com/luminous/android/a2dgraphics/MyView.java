@@ -4,12 +4,14 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.view.View;
 
 public class MyView extends View {
 
     private Paint redPaint;
     private Paint bluePaint;
+    private Paint greenPaint;
 
     public MyView(Context context) {
         super(context);
@@ -24,6 +26,12 @@ public class MyView extends View {
         bluePaint.setStyle(Paint.Style.STROKE);
         bluePaint.setColor(Color.BLUE);
         bluePaint.setStrokeWidth(10);
+
+
+
+        Path myLines = new Path();
+        myLines.moveTo(30, 100);
+        myLines.lineTo(40, 200);
     }
 
     @Override
