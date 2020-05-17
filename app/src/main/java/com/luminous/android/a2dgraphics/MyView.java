@@ -29,6 +29,7 @@ public class MyView extends View {
 
         greenPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         greenPaint.setStyle(Paint.Style.STROKE);
+        greenPaint.setColor(Color.GREEN);
         greenPaint.setStrokeWidth(5);
 
 
@@ -45,5 +46,6 @@ public class MyView extends View {
         canvas.drawRect(10,30,200,200, redPaint);
         canvas.drawCircle(300, 300, 250, bluePaint);
 
+        
     }
 }
