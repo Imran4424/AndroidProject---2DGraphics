@@ -12,6 +12,7 @@ public class MyView extends View {
     private Paint redPaint;
     private Paint bluePaint;
     private Paint greenPaint;
+    private Path myLines;
 
     public MyView(Context context) {
         super(context);
@@ -30,12 +31,15 @@ public class MyView extends View {
         greenPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         greenPaint.setStyle(Paint.Style.STROKE);
         greenPaint.setColor(Color.GREEN);
-        greenPaint.setStrokeWidth(5);
+        greenPaint.setStrokeWidth(10);
 
 
-        Path myLines = new Path();
-        myLines.moveTo(30, 100);
-        myLines.lineTo(40, 200);
+        myLines = new Path();
+        myLines.moveTo(50, 300);
+        myLines.lineTo(150, 400);
+        myLines.lineTo(180, 350);
+        myLines.lineTo(220, 420);
+        myLines.lineTo(280, 250);
     }
 
     @Override
@@ -46,6 +50,6 @@ public class MyView extends View {
         canvas.drawRect(10,30,200,200, redPaint);
         canvas.drawCircle(300, 300, 250, bluePaint);
 
-        
+        canvas.drawPath(myLines, greenPaint);
     }
 }
