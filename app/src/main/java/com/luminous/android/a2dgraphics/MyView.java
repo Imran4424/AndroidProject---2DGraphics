@@ -14,6 +14,7 @@ public class MyView extends View {
     private Paint greenPaint;
     private Path myLines;
     private Paint redFillPaint;
+    private Paint blackBorderPaint;
 
     public MyView(Context context) {
         super(context);
@@ -38,7 +39,8 @@ public class MyView extends View {
         redFillPaint.setStyle(Paint.Style.FILL);
         redFillPaint.setARGB(255, 255, 0, 0);
 
-        Paint blackBorderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        blackBorderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        
 
         myLines = new Path();
         myLines.moveTo(50, 300);
