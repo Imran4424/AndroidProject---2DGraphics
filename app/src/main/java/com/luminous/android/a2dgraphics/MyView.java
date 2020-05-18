@@ -33,6 +33,7 @@ public class MyView extends View {
         greenPaint.setColor(Color.GREEN);
         greenPaint.setStrokeWidth(10);
 
+        Paint redFillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         myLines = new Path();
         myLines.moveTo(50, 300);
@@ -40,6 +41,7 @@ public class MyView extends View {
         myLines.lineTo(180, 350);
         myLines.lineTo(220, 420);
         myLines.lineTo(280, 250);
+        myLines.close();
 
     }
 
