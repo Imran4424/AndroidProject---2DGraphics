@@ -13,6 +13,7 @@ public class MyView extends View {
     private Paint bluePaint;
     private Paint greenPaint;
     private Path myLines;
+    private Paint redFillPaint;
 
     public MyView(Context context) {
         super(context);
@@ -33,7 +34,8 @@ public class MyView extends View {
         greenPaint.setColor(Color.GREEN);
         greenPaint.setStrokeWidth(10);
 
-        Paint redFillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        redFillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        
 
         myLines = new Path();
         myLines.moveTo(50, 300);
