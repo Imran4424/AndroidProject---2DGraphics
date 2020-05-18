@@ -35,7 +35,8 @@ public class MyView extends View {
         greenPaint.setStrokeWidth(10);
 
         redFillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        
+        redFillPaint.setStyle(Paint.Style.FILL);
+        redFillPaint.setARGB(255, 255, 0, 0);
 
         myLines = new Path();
         myLines.moveTo(50, 300);
