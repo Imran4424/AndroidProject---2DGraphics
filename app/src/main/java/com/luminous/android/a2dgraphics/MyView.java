@@ -3,8 +3,10 @@ package com.luminous.android.a2dgraphics;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Shader;
 import android.view.View;
 
 public class MyView extends View {
@@ -15,6 +17,8 @@ public class MyView extends View {
     private Path myLines;
     private Paint redFillPaint;
     private Paint blackBorderPaint;
+    private Paint gradientPaint;
+    private LinearGradient linearGradient;
 
     public MyView(Context context) {
         super(context);
@@ -40,7 +44,14 @@ public class MyView extends View {
         redFillPaint.setARGB(255, 255, 0, 0);
 
         blackBorderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        
+        blackBorderPaint.setStyle(Paint.Style.STROKE);
+        blackBorderPaint.setColor(Color.BLACK);
+
+        linearGradient = new LinearGradient(50, 300, 280, 250, Color.BLUE, Color.RED, Shader.TileMode.MIRROR);
+
+        gradientPaint = new Paint();
+        gradientPaint.setStyle(Paint.Style.FILL);
+        gradientPaint.setShader(linearGradient);
 
         myLines = new Path();
         myLines.moveTo(50, 300);
@@ -48,7 +59,7 @@ public class MyView extends View {
         myLines.lineTo(180, 350);
         myLines.lineTo(220, 420);
         myLines.lineTo(280, 250);
-        myLines.close();
+        //myLines.close();
 
     }
 
@@ -60,7 +71,8 @@ public class MyView extends View {
         canvas.drawRect(10,30,200,200, redPaint);
         canvas.drawCircle(300, 300, 250, bluePaint);
 
-        canvas.drawPath(myLines, greenPaint);
+        canvas.drawPath(myLines, gradientPaint);
+        canvas.drawPath(myLines, blackBorderPaint);
 
 //        Path quizLines = new Path();
 //        quizLines.moveTo(50, 300);
