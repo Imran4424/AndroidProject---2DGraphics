@@ -20,9 +20,10 @@ public class TransformationView extends View {
         points[3] = new Point(240, 420);
         points[4] = new Point(300, 200);
 
+        myLines = new Path();
     }
 
     protected void updatePath(Point[] newPoints) {
-
+        myLines.reset();
     }
 }
