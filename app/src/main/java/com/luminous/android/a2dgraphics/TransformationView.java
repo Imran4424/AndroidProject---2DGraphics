@@ -37,6 +37,8 @@ public class TransformationView extends View {
     protected Point[] affineTransformation(Point[] vertices, double[][] matrix) {
         Point[] result = new Point[vertices.length];
 
-        for
+        for(int i = 0; i < vertices.length; i++) {
+            int t = (int) (matrix[0][0] * vertices[i].x + matrix[0][1] * vertices[i].y)
+        }
     }
 }
