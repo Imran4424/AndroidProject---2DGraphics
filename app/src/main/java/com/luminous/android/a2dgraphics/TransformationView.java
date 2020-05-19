@@ -25,5 +25,7 @@ public class TransformationView extends View {
 
     protected void updatePath(Point[] newPoints) {
         myLines.reset();
+
+        myLines.moveTo(newPoints[0].x, newPoints[0].y);
     }
 }
