@@ -2,6 +2,7 @@ package com.luminous.android.a2dgraphics;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
 import android.view.View;
@@ -10,6 +11,8 @@ public class TransformationView extends View {
 
     Point[] points;
     private Path myLines;
+    private Paint blackBorderPaint;
+    private Paint gradientPaint;
 
     public TransformationView(Context context) {
         super(context);
@@ -68,6 +71,6 @@ public class TransformationView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        
+
     }
 }
