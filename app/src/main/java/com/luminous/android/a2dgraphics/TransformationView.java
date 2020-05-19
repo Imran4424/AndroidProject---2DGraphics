@@ -48,7 +48,18 @@ public class TransformationView extends View {
     }
 
     protected Point[] translate(Point[] input, int px, int py) {
-        double matrix = new double[3][3];
-        
+        double[][] matrix = new double[3][3];
+        matrix[0][0] = 1;
+        matrix[0][1] = 0;
+        matrix[0][2] = px;
+
+        matrix[1][0] = 0;
+        matrix[1][1] = 1;
+        matrix[1][2] = py;
+
+        matrix[2][0] = matrix[2][1] = 0;
+        matrix[2][2] = 1;
+
+        return affineTransformation(input, matrix);
     }
 }
