@@ -46,6 +46,7 @@ public class MyView extends View {
         blackBorderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         blackBorderPaint.setStyle(Paint.Style.STROKE);
         blackBorderPaint.setColor(Color.BLACK);
+        blackBorderPaint.setStrokeWidth(5);
 
         linearGradient = new LinearGradient(50, 300, 280, 250, Color.BLUE, Color.RED, Shader.TileMode.MIRROR);
 
