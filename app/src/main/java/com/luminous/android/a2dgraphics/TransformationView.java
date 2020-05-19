@@ -33,4 +33,10 @@ public class TransformationView extends View {
 
         myLines.close();
     }
+
+    protected Point[] affineTransformation(Point[] vertices, double[][] matrix) {
+        Point[] result = new Point[vertices.length];
+
+        for
+    }
 }
