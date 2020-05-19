@@ -46,4 +46,9 @@ public class TransformationView extends View {
 
         return  result;
     }
+
+    protected Point[] translate(Point[] input, int px, int py) {
+        double matrix = new double[3][3];
+        
+    }
 }
