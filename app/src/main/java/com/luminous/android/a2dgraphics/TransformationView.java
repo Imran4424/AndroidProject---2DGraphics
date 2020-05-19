@@ -43,5 +43,7 @@ public class TransformationView extends View {
 
             result[i] = new Point(t, u);
         }
+
+        return  result;
     }
 }
