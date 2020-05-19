@@ -1,6 +1,7 @@
 package com.luminous.android.a2dgraphics;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Path;
 import android.graphics.Point;
 import android.view.View;
@@ -61,5 +62,11 @@ public class TransformationView extends View {
         matrix[2][2] = 1;
 
         return affineTransformation(input, matrix);
+    }
+
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
     }
 }
