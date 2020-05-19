@@ -13,10 +13,10 @@ public class TransformationView extends View {
 
         points = new Point[5];
         points[0] = new Point(50, 300);
-        points[0] = new Point(150, 400);
-        points[0] = new Point(180, 340);
-        points[0] = new Point(240, 420);
-        points[0] = new Point(300, 200);
+        points[1] = new Point(150, 400);
+        points[2] = new Point(180, 340);
+        points[3] = new Point(240, 420);
+        points[4] = new Point(300, 200);
 
     }
 }
