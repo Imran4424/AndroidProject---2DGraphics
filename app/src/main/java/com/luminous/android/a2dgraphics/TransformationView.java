@@ -87,5 +87,8 @@ public class TransformationView extends View {
         super.onDraw(canvas);
 
         canvas.drawPath(myLines, gradientPaint);
+        Point[] newPoints = translate(points, 20, 40);
+        updatePath(newPoints);
+        canvas.drawPath(myLines, blackBorderPaint);
     }
 }
