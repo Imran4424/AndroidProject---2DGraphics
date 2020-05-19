@@ -27,5 +27,10 @@ public class TransformationView extends View {
         myLines.reset();
 
         myLines.moveTo(newPoints[0].x, newPoints[0].y);
+        for(int i = 1; i < newPoints.length; i++) {
+            myLines.lineTo(newPoints[i].x, newPoints[i].y);
+        }
+
+        myLines.close();
     }
 }
