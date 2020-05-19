@@ -38,7 +38,10 @@ public class TransformationView extends View {
         Point[] result = new Point[vertices.length];
 
         for(int i = 0; i < vertices.length; i++) {
-            int t = (int) (matrix[0][0] * vertices[i].x + matrix[0][1] * vertices[i].y)
+            int t = (int) (matrix[0][0] * vertices[i].x + matrix[0][1] * vertices[i].y + matrix[0][2]);
+            int u = (int) (matrix[1][0] * vertices[i].x + matrix[1][1] * vertices[i].y + matrix[1][2]);
+
+            result[i] = new Point(t, u);
         }
     }
 }
