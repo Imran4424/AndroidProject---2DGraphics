@@ -7,6 +7,7 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     private MyView myView;
+    private TransformationView transformationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
         // replace the view with custom design view
         myView = new MyView(this);
+        transformationView = new TransformationView(this);
+
 //        setContentView(myView);
-        setContentView(myView);
+        setContentView(transformationView);
     }
 }
