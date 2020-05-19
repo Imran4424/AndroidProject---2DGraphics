@@ -2,10 +2,12 @@ package com.luminous.android.a2dgraphics;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
+import android.graphics.Shader;
 import android.view.View;
 
 public class TransformationView extends View {
@@ -27,6 +29,16 @@ public class TransformationView extends View {
         points[4] = new Point(300, 200);
 
         myLines = new Path();
+
+        blackBorderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        blackBorderPaint.setStyle(Paint.Style.STROKE);
+        blackBorderPaint.setColor(Color.BLACK);
+
+        linearGradient = new LinearGradient(50, 300, 280, 250, Color.BLUE, Color.RED, Shader.TileMode.MIRROR);
+
+        gradientPaint = new Paint();
+        gradientPaint.setStyle(Paint.Style.FILL);
+        gradientPaint.setShader(linearGradient);
     }
 
     protected void updatePath(Point[] newPoints) {
