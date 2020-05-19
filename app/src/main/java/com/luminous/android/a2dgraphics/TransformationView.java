@@ -19,4 +19,8 @@ public class TransformationView extends View {
         points[4] = new Point(300, 200);
 
     }
+
+    protected void updatePath(Point[] newPoints) {
+        
+    }
 }
